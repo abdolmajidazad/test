@@ -9,7 +9,7 @@ import {Router} from "angular2/router";
 export class App2Component{
   constructor(private _router:Router){}
   onNavigate (){
-    this._router.navigate(['Component1']);
+    this._router.navigate(['Component1',{source  : 'component2'}]);
   }
 
 }
